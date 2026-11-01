@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openbb-indonesia"
+version = "0.1.0"
+dependencies = ["openbb-core", "openbb-equity", "httpx", "python-dateutil", "yfinance", "openpyxl"]
+
+[project.entry-points."openbb_provider_extension"]
+indonesia = "openbb_indonesia:provider"
+
+[tool.setuptools]
+packages = ["openbb_indonesia"]

@@ -1,0 +1,93 @@
+"""Portfolio — Ownership Signals
+
+KSEI (Balancepos) ownership for each stock you hold: foreign % and its 1M/3M/12M change, mutual fund
+share and change, with a plain-language signal.
+"""
+
+from core.portfolio import reports
+
+WIDGET_ID = "portfolio_ownership"
+ORDER = 200
+
+WIDGET = {'name': 'Portfolio — Ownership Signals',
+ 'description': 'KSEI (Balancepos) ownership for each stock you hold: foreign % and its 1M/3M/12M change, '
+                'mutual fund share and change, with a plain-language signal.',
+ 'category': 'portfolio',
+ 'type': 'table',
+ 'endpoint': '/portfolio/ownership',
+ 'data': {'table': {'showAll': True,
+                    'enableCharts': True,
+                    'chartView': {'enabled': False, 'chartType': 'groupedBar'},
+                    'columnsDefs': [{'field': 'ticker',
+                                     'headerName': 'Ticker',
+                                     'chartDataType': 'category',
+                                     'cellDataType': 'text',
+                                     'pinned': 'left'},
+                                    {'field': 'signal',
+                                     'headerName': 'Signal',
+                                     'chartDataType': 'excluded',
+                                     'cellDataType': 'text'},
+                                    {'field': 'foreign_pct',
+                                     'headerName': 'Foreign %',
+                                     'chartDataType': 'excluded',
+                                     'cellDataType': 'number',
+                                     'formatterFn': 'none'},
+                                    {'field': 'foreign_chg_1m',
+                                     'headerName': 'Foreign Δ1M (pp)',
+                                     'chartDataType': 'series',
+                                     'cellDataType': 'number',
+                                     'formatterFn': 'none'},
+                                    {'field': 'foreign_chg_3m',
+                                     'headerName': 'Foreign Δ3M (pp)',
+                                     'chartDataType': 'series',
+                                     'cellDataType': 'number',
+                                     'formatterFn': 'none'},
+                                    {'field': 'foreign_chg_12m',
+                                     'headerName': 'Foreign Δ12M (pp)',
+                                     'chartDataType': 'excluded',
+                                     'cellDataType': 'number',
+                                     'formatterFn': 'none'},
+                                    {'field': 'mutual_fund_pct',
+                                     'headerName': 'Mutual Fund %',
+                                     'chartDataType': 'excluded',
+                                     'cellDataType': 'number',
+                                     'formatterFn': 'none'},
+                                    {'field': 'mutual_fund_chg_1m',
+                                     'headerName': 'Mutual Fund Δ1M (pp)',
+                                     'chartDataType': 'excluded',
+                                     'cellDataType': 'number',
+                                     'formatterFn': 'none'},
+                                    {'field': 'pension_insurance_pct',
+                                     'headerName': 'Pension + Insurance %',
+                                     'chartDataType': 'excluded',
+                                     'cellDataType': 'number',
+                                     'formatterFn': 'none'},
+                                    {'field': 'individual_pct',
+                                     'headerName': 'Individual %',
+                                     'chartDataType': 'excluded',
+                                     'cellDataType': 'number',
+                                     'formatterFn': 'none'},
+                                    {'field': 'weight_pct',
+                                     'headerName': 'Portfolio Weight %',
+                                     'chartDataType': 'excluded',
+                                     'cellDataType': 'number',
+                                     'formatterFn': 'none'},
+                                    {'field': 'market_value',
+                                     'headerName': 'Market Value',
+                                     'chartDataType': 'excluded',
+                                     'cellDataType': 'number',
+                                     'formatterFn': 'int'},
+                                    {'field': 'sector',
+                                     'headerName': 'Sector',
+                                     'chartDataType': 'excluded',
+                                     'cellDataType': 'text'},
+                                    {'field': 'ksei_month',
+                                     'headerName': 'KSEI Month',
+                                     'chartDataType': 'excluded',
+                                     'cellDataType': 'text'}]}},
+ 'gridData': {'w': 20, 'h': 14},
+ 'params': []}
+
+
+def get():
+    return reports.get_ownership_signals()

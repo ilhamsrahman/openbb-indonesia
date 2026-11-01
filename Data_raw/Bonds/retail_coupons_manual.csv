@@ -1,0 +1,14 @@
+code,coupon_pct,note,source
+SR022T3,6.45,fixed,https://investasi.kontan.co.id/news/bisa-dibeli-mulai-jumat-165-kupon-sr022-645-3-tahun-dan-655-5-tahun
+SR022T5,6.55,fixed,https://investasi.kontan.co.id/news/bisa-dibeli-mulai-jumat-165-kupon-sr022-645-3-tahun-dan-655-5-tahun
+SR023T3,5.80,fixed,https://www.bareksa.com/berita/sbn/2025-08-22/pemerintah-tawarkan-sr023-pada-22-agustus-15-september-imbal-hasilnya-fixed-58-595
+SR023T5,5.95,fixed,https://www.bareksa.com/berita/sbn/2025-08-22/pemerintah-tawarkan-sr023-pada-22-agustus-15-september-imbal-hasilnya-fixed-58-595
+SR024T3,5.55,fixed,https://www.ocbc.id/id/article/2026/04/08/sr024
+SR024T5,5.90,fixed,https://www.ocbc.id/id/article/2026/04/08/sr024
+SR025T3,6.80,fixed,https://www.bareksa.com/berita/sbn/2026-08-21/sr025-sudah-bisa-dibeli-imbal-hasil-68-69-tertinggi-sejak-2020-ini-simulasi-kupon-bersih
+SR025T5,6.90,fixed,https://www.bareksa.com/berita/sbn/2026-08-21/sr025-sudah-bisa-dibeli-imbal-hasil-68-69-tertinggi-sejak-2020-ini-simulasi-kupon-bersih
+ST014T2,6.50,floating with floor (initial),https://momsmoney.kontan.co.id/news/investasi-syariah-sukuk-tabungan-st014-mulai-dijual-tingkat-imbalan-650-660
+ST014T4,6.60,floating with floor (initial),https://momsmoney.kontan.co.id/news/investasi-syariah-sukuk-tabungan-st014-mulai-dijual-tingkat-imbalan-650-660
+ST015T2,5.20,floating with floor (initial; BI Rate + 45bp),https://www.bareksa.com/berita/sbn/2025-11-08/imbal-hasil-sbn-syariah-st015-minimal-52-545-setahun-lebih-cuan-dari-tabungan-bank-besar
+ST015T4,5.45,floating with floor (initial; BI Rate + 70bp),https://www.bareksa.com/berita/sbn/2025-11-08/imbal-hasil-sbn-syariah-st015-minimal-52-545-setahun-lebih-cuan-dari-tabungan-bank-besar
+SWR007,6.70,floating with floor (initial),https://emitennews.com/news/pemerintah-rilis-sukuk-wakaf-swr007-imbalan-minimal-670

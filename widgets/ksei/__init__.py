@@ -1,0 +1,1 @@
+"""KSEI ownership widgets (Balancepos)."""

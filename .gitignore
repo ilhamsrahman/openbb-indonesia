@@ -1,0 +1,22 @@
+# ---- Python build / cache
+__pycache__/
+*.pyc
+*.egg-info/
+*.tmp
+
+# ---- Backups and editor/Office temp files (git history replaces .bak copies)
+*.bak
+~$*
+*.swp
+
+# ---- Data: re-downloadable or personal (kept on disk, not in git)
+Data_raw/*
+!Data_raw/Bonds/
+Data_raw/Bonds/*
+!Data_raw/Bonds/retail_coupons_manual.csv
+# Personal financial files are deliberately NOT tracked:
+#   Data_raw/Portfolio/  (Portfolio_Tracker.xlsx, Portfolio_latest.xlsx)
+
+# Personal notes and generated files
+docs/PRIVATE_NOTES.md
+widgets.json
